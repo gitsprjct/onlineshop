@@ -24,6 +24,14 @@ body{
 .banner img{
     width: 100%;
 }
+.product{
+    display: flex;
+    margin: 0;
+    width: 100%;
+}
+.product img{
+    width: 100%;
+}
 .menu{
     display: grid;
     grid-template-columns: repeat(2, 50%)
