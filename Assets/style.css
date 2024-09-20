@@ -25,20 +25,13 @@ body{
     width: 100%;
 }
 .product{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,33%);
     margin: 0;
     width: 100%;
 }
 .product img{
     width: 100%;
-}
-.menu{
-    display: grid;
-    grid-template-columns: repeat(2, 50%)
-}
-#menu1, #menu2, #menu3, #menu4{
-    background-color:gray;
-    margin: 5px;
 }
 footer{
     background-color: red;
@@ -78,5 +71,17 @@ footer h2{
     .product{
         display: grid;
         grid-template-columns: repeat(2,50%);
+    }
+    footer{
+        background-color: red;
+        padding: 5px;
+        display: flex;
+    }
+    footer h2{
+        font-size: 100%;
+        font-weight: bold;
+        color: white;
+        margin: 0 auto;
+        padding:  2px 5px;
     }
 }
