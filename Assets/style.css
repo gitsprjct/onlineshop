@@ -52,3 +52,31 @@ footer h2{
     margin: 0 auto;
     padding:  2px 15px;
 }
+@media (max-width: 767px){
+    header{
+        width: 100%;
+    }
+    .navbar{
+        background-color: red;
+        padding: 5px;
+        display: flex;
+    }
+    .navbar a{
+        text-decoration: none;
+        font-size: 85%;
+        font-weight: bold;
+        color: white;
+        margin: 0 auto;
+        padding:  2px 5px;
+    }
+    .navbar a:hover{
+        background-color: white;
+        color: red;
+        border-radius: 999px;
+        animation: ease-in-out 2s;
+    }
+    .product{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+    }
+}
