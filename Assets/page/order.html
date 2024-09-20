@@ -17,10 +17,31 @@
         </nav>
     </header>
     <main>
-
+        <form id="whatsappForm" onsubmit="sendMessage(event)">
+            <label for="name">Nama Pemesan:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="message">Produk yang dipesan</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+            
+            <button type="submit">Kirim</button>
+        </form>
     </main>
     <footer>
         <h2>Kelas X.10 TA 2024-2025</h2>
     </footer>
+    <script>
+        function sendMessage(event) {
+            event.preventDefault(); // Menghindari pengiriman form
+
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+
+            const phoneNumber = '1234567890'; // Ganti dengan nomor WhatsApp yang diinginkan
+            const whatsappURL = `https://wa.me/6283857279747?text=${encodeURIComponent(`Nama: ${name}\nPesan: ${message}`)}`;
+
+            window.open(whatsappURL, '_blank'); // Membuka WhatsApp di tab baru
+        }
+    </script>
 </body>
 </html>
