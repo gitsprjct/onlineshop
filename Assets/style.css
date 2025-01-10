@@ -1,87 +1,80 @@
 body{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
+    background-color:#344CB7;
+}
+#home{
+    background-color:#000957;
+}
+header{
+    background-color:#000957;
+    display:flex;
+    width:100%;
+}
+#home{
+    width:100%;
+    display:fixed;
+    position:fixed;
+}
+#hhome{
+    background-color:#000957;
+    display:flex;
+    position:fixed;
+    width:50%;
 }
 .navbar{
-    background-color: red;
-    padding: 15px;
-    display: flex;
+    background-color:#000957;
+    margin:5px;
+    padding:17px;
 }
 .navbar a{
-    text-decoration: none;
-    font-size: 150%;
-    font-weight: bold;
-    color: white;
-    margin: 0 auto;
-    padding:  2px 15px;
+    text-decoration:none;
+    color:#FFEB00;
+    font-weight:bold;
+    margin:auto;
+    padding:10px 15px;
+    font-size:18px;
 }
 .navbar a:hover{
-    background-color: white;
-    color: red;
-    border-radius: 999px;
-    animation: ease-in-out 2s;
+    background-color:#074799;
+    padding:10px 15px;
 }
 .banner img{
-    width: 100%;
+    width:100%;
 }
-.product{
-    display: grid;
-    grid-template-columns: repeat(3,33%);
-    margin: 0;
-    width: 100%;
+#web{
+    display:flex;
+    flex-direction:column;
+    margin-top:50px;
+    gap:10px;
 }
-.product img{
-    width: 100%;
+#web iframe{
+    width:160vh;
+    height:90vh;
+    margin:auto;
 }
-footer{
-    background-color: red;
-    padding: 15px;
-    display: flex;
+.contact{
+    width:75%;
+    max-width:600px;
+    padding:25px;
+    background-color:#577BC1;
+    display:flex;
+    flex-direction:column;
+    margin:150px auto;
 }
-footer h2{
-    font-size: 150%;
-    font-weight: bold;
-    color: white;
-    margin: 0 auto;
-    padding:  2px 15px;
+.contact h1, h3, a{
+    margin:auto;
 }
-@media (max-width: 767px){
-    header{
-        width: 100%;
-    }
-    .navbar{
-        background-color: red;
-        padding: 5px;
-        display: flex;
-    }
-    .navbar a{
-        text-decoration: none;
-        font-size: 85%;
-        font-weight: bold;
-        color: white;
-        margin: 0 auto;
-        padding:  2px 5px;
-    }
-    .navbar a:hover{
-        background-color: white;
-        color: red;
-        border-radius: 999px;
-        animation: ease-in-out 2s;
-    }
-    .product{
-        display: grid;
-        grid-template-columns: repeat(2,50%);
-    }
-    footer{
-        background-color: red;
-        padding: 5px;
-        display: flex;
-    }
-    footer h2{
-        font-size: 100%;
-        font-weight: bold;
-        color: white;
-        margin: 0 auto;
-        padding:  2px 5px;
-    }
+.contact h1{
+    color:#FFEB00;
+    font-weight:bold;
+    font-size:300%;
+}
+.contact h3{
+    color:#FFEB00;
+}
+.contact a{
+    color:#000957;
+    text-decoration:none;
+    font-weight:bold;
 }
